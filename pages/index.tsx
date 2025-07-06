@@ -11,16 +11,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      {/* Debug test - this should show red background */}
-      <div style={{backgroundColor: 'red', color: 'white', padding: '20px', textAlign: 'center'}}>
-        <h1>DEBUG: If you see this red box, React is working</h1>
-      </div>
-      
-      {/* Tailwind test */}
-      <div className="bg-blue-500 text-white p-4 text-center">
-        <h1 className="text-3xl font-bold">TAILWIND TEST: This should be blue background</h1>
-      </div>
-      
       <DigitalPhotographyConference />
     </>
   );
