@@ -1,6 +1,12 @@
+/* TEST - If you see red body background, CSS is loading */
+body {
+  background-color: red !important;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* rest of your CSS... */
 
 /* Reset and base styles */
 html,
