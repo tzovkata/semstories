@@ -9,7 +9,7 @@ const DigitalPhotographyConference = () => {
     seconds: 0
   });
   
-  const [openFaq, setOpenFaq] = useState(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -92,15 +92,15 @@ const DigitalPhotographyConference = () => {
     }
   ];
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Registration submitted successfully!');
-  };
+const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+  e.preventDefault();
+  console.log('Form submitted:', formData);
+  alert('Registration submitted successfully!');
+};
 
-  const toggleFaq = (index) => {
-    setOpenFaq(openFaq === index ? null : index);
-  };
+const toggleFaq = (index: number) => {
+  setOpenFaq(openFaq === index ? null : index);
+};
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -365,7 +365,33 @@ const DigitalPhotographyConference = () => {
             <p className="text-gray-400">July 2017</p>
           </div>
           
-border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none"
+          <div className="space-y-6">
+            <div className="grid md:grid-cols-2 gap-6">
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="w-full p-4 bg-gray-800 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none"
+                value={formData.name}
+                onChange={(e) => setFormData({...formData, name: e.target.value})}
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="w-full p-4 bg-gray-800 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none"
+                value={formData.email}
+                onChange={(e) => setFormData({...formData, email: e.target.value})}
+              />
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <input
+                type="tel"
+                placeholder="Phone number"
+                className="w-full p-4 bg-gray-800 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none"
+                value={formData.phone}
+                onChange={(e) => setFormData({...formData, phone: e.target.value})}
+              />
+              <select
+                className="w-full p-4 bg-gray-800 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none"
                 value={formData.ticket}
                 onChange={(e) => setFormData({...formData, ticket: e.target.value})}
               >
@@ -375,7 +401,7 @@ border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none"
               </select>
             </div>
             <button
-              type="submit"
+              onClick={handleSubmit}
               className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 py-4 rounded-lg font-semibold transition-all duration-300"
             >
               Get your ticket now
@@ -383,7 +409,7 @@ border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none"
             <p className="text-sm text-gray-400 text-center">
               * We don't share your information with anyone.
             </p>
-          </form>
+          </div>
         </div>
       </section>
 
