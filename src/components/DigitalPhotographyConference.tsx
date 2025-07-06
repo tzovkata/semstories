@@ -398,6 +398,146 @@ const toggleFaq = (index: number) => {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">What People Say About Us</h2>
+            <p className="text-gray-400">
+              Hear from marketing professionals who've attended our previous events
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Testimonial 1 */}
+            <div className="group relative bg-gray-800 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+              <div className="absolute top-6 left-6 text-6xl text-blue-400 opacity-20 font-serif">"</div>
+              <div className="relative z-10 pt-8">
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  The strategies I learned at SEM Stories completely transformed our Google Ads performance. 
+                  Our ROAS increased by 240% within just 3 months of implementing what I learned.
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-white font-semibold">SC</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-white">Sarah Chen</h4>
+                    <p className="text-gray-400 text-sm">Digital Marketing Manager, TechFlow</p>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute bottom-6 right-6 text-6xl text-blue-400 opacity-20 font-serif rotate-180">"</div>
+            </div>
+
+            {/* Testimonial 2 */}
+            <div className="group relative bg-gray-800 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+              <div className="absolute top-6 left-6 text-6xl text-purple-400 opacity-20 font-serif">"</div>
+              <div className="relative z-10 pt-8">
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  Incredible networking opportunities and actionable insights. I connected with 3 new business 
+                  partners and gained strategies that immediately boosted our client campaigns.
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-white font-semibold">MR</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-white">Mike Rodriguez</h4>
+                    <p className="text-gray-400 text-sm">Founder, Conversion Labs</p>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute bottom-6 right-6 text-6xl text-purple-400 opacity-20 font-serif rotate-180">"</div>
+            </div>
+
+            {/* Testimonial 3 */}
+            <div className="group relative bg-gray-800 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+              <div className="absolute top-6 left-6 text-6xl text-green-400 opacity-20 font-serif">"</div>
+              <div className="relative z-10 pt-8">
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  Best marketing event I've attended in years. The speakers shared real data and case studies, 
+                  not just theory. Already implementing their feed optimisation techniques.
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-blue-600 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-white font-semibold">AL</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-white">Amanda Liu</h4>
+                    <p className="text-gray-400 text-sm">SEM Specialist, Growth Media</p>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute bottom-6 right-6 text-6xl text-green-400 opacity-20 font-serif rotate-180">"</div>
+            </div>
+
+            {/* Testimonial 4 */}
+            <div className="group relative bg-gray-800 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+              <div className="absolute top-6 left-6 text-6xl text-orange-400 opacity-20 font-serif">"</div>
+              <div className="relative z-10 pt-8">
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  The local strategy session was game-changing for our multi-location business. 
+                  We've seen a 180% increase in local conversions using their techniques.
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-white font-semibold">DK</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-white">David Kumar</h4>
+                    <p className="text-gray-400 text-sm">Marketing Director, RetailPlus</p>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute bottom-6 right-6 text-6xl text-orange-400 opacity-20 font-serif rotate-180">"</div>
+            </div>
+
+            {/* Testimonial 5 */}
+            <div className="group relative bg-gray-800 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+              <div className="absolute top-6 left-6 text-6xl text-pink-400 opacity-20 font-serif">"</div>
+              <div className="relative z-10 pt-8">
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  Exceptional value for money. The 1-1 sessions with industry pros were worth the ticket price alone. 
+                  Left with a clear roadmap for scaling our campaigns.
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-white font-semibold">JW</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-white">Jessica Wong</h4>
+                    <p className="text-gray-400 text-sm">Performance Marketing Lead, Shopify Plus</p>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute bottom-6 right-6 text-6xl text-pink-400 opacity-20 font-serif rotate-180">"</div>
+            </div>
+
+            {/* Testimonial 6 */}
+            <div className="group relative bg-gray-800 p-8 rounded-xl hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+              <div className="absolute top-6 left-6 text-6xl text-cyan-400 opacity-20 font-serif">"</div>
+              <div className="relative z-10 pt-8">
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  Perfect blend of advanced tactics and practical implementation. The Performance Max insights 
+                  helped us unlock an additional £50K in monthly revenue.
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-white font-semibold">RT</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-white">Robert Turner</h4>
+                    <p className="text-gray-400 text-sm">Head of Paid Media, eCommerce Elite</p>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute bottom-6 right-6 text-6xl text-cyan-400 opacity-20 font-serif rotate-180">"</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Tickets Section */}
       <section id="tickets" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
@@ -440,6 +580,228 @@ const toggleFaq = (index: number) => {
                 Buy VIP Ticket
               </button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sponsors Section */}
+      <section className="py-20 px-6 bg-gray-900">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Our Partners</h2>
+            <p className="text-gray-400">
+              We're proud to collaborate with the tools, teams, and brands that empower creatives every day.
+            </p>
+          </div>
+
+          {/* Headline Sponsor */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-semibold text-center mb-8 text-blue-400">Headline Sponsor</h3>
+            <div className="flex justify-center">
+              <div className="group relative w-80 h-48 [perspective:1000px]">
+                <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                  {/* Front Face */}
+                  <div className="absolute inset-0 h-full w-full rounded-xl bg-white [backface-visibility:hidden] flex items-center justify-center p-8 shadow-2xl border-4 border-blue-400">
+                    <Image
+                      src="/images/sponsors/bookedupmedia.png"
+                      alt="Booked Up Media"
+                      width={200}
+                      height={100}
+                      className="max-h-20 w-auto object-contain"
+                    />
+                  </div>
+                  {/* Back Face */}
+                  <div className="absolute inset-0 h-full w-full rounded-xl bg-gradient-to-br from-blue-600 to-purple-700 [transform:rotateY(180deg)] [backface-visibility:hidden] flex items-center justify-center p-6 shadow-2xl">
+                    <div className="text-center text-white">
+                      <h4 className="text-xl font-bold mb-3">Booked Up Media</h4>
+                      <p className="text-sm leading-relaxed">
+                        Premier digital marketing agency specialising in performance marketing, 
+                        SEM strategies, and data-driven campaigns that deliver exceptional ROI for clients.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Gold Sponsors */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-semibold text-center mb-8 text-yellow-400">Gold Sponsors</h3>
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {/* Lunio */}
+              <div className="group relative w-full h-40 [perspective:1000px]">
+                <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                  {/* Front Face */}
+                  <div className="absolute inset-0 h-full w-full rounded-xl bg-white [backface-visibility:hidden] flex items-center justify-center p-6 shadow-lg border-2 border-yellow-400">
+                    <Image
+                      src="/images/sponsors/lunio.png"
+                      alt="Lunio"
+                      width={150}
+                      height={75}
+                      className="max-h-16 w-auto object-contain"
+                    />
+                  </div>
+                  {/* Back Face */}
+                  <div className="absolute inset-0 h-full w-full rounded-xl bg-gradient-to-br from-yellow-500 to-orange-600 [transform:rotateY(180deg)] [backface-visibility:hidden] flex items-center justify-center p-4 shadow-lg">
+                    <div className="text-center text-white">
+                      <h4 className="text-lg font-bold mb-2">Lunio</h4>
+                      <p className="text-sm leading-relaxed">
+                        Advanced click fraud protection platform helping businesses 
+                        optimise their ad spend and improve campaign performance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Dentsu */}
+              <div className="group relative w-full h-40 [perspective:1000px]">
+                <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                  {/* Front Face */}
+                  <div className="absolute inset-0 h-full w-full rounded-xl bg-white [backface-visibility:hidden] flex items-center justify-center p-6 shadow-lg border-2 border-yellow-400">
+                    <Image
+                      src="/images/sponsors/dentsu.png"
+                      alt="Dentsu"
+                      width={150}
+                      height={75}
+                      className="max-h-16 w-auto object-contain"
+                    />
+                  </div>
+                  {/* Back Face */}
+                  <div className="absolute inset-0 h-full w-full rounded-xl bg-gradient-to-br from-purple-600 to-pink-600 [transform:rotateY(180deg)] [backface-visibility:hidden] flex items-center justify-center p-4 shadow-lg">
+                    <div className="text-center text-white">
+                      <h4 className="text-lg font-bold mb-2">Dentsu</h4>
+                      <p className="text-sm leading-relaxed">
+                        Global network of agencies delivering integrated solutions 
+                        across media, creative, and customer experience platforms.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Silver Sponsors */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-semibold text-center mb-8 text-gray-300">Silver Sponsors</h3>
+            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {/* Placeholder Silver Sponsor 1 */}
+              <div className="group relative w-full h-36 [perspective:1000px]">
+                <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                  {/* Front Face */}
+                  <div className="absolute inset-0 h-full w-full rounded-xl bg-white [backface-visibility:hidden] flex items-center justify-center p-4 shadow-md border border-gray-300">
+                    <div className="text-gray-400 text-center">
+                      <div className="w-16 h-16 bg-gray-200 rounded-lg mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-2xl font-bold">S1</span>
+                      </div>
+                      <p className="text-sm">Silver Sponsor</p>
+                    </div>
+                  </div>
+                  {/* Back Face */}
+                  <div className="absolute inset-0 h-full w-full rounded-xl bg-gradient-to-br from-gray-500 to-gray-700 [transform:rotateY(180deg)] [backface-visibility:hidden] flex items-center justify-center p-4 shadow-md">
+                    <div className="text-center text-white">
+                      <h4 className="text-lg font-bold mb-2">Silver Partner</h4>
+                      <p className="text-xs leading-relaxed">
+                        Innovative solutions provider supporting 
+                        digital marketing excellence.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Placeholder Silver Sponsor 2 */}
+              <div className="group relative w-full h-36 [perspective:1000px]">
+                <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                  {/* Front Face */}
+                  <div className="absolute inset-0 h-full w-full rounded-xl bg-white [backface-visibility:hidden] flex items-center justify-center p-4 shadow-md border border-gray-300">
+                    <div className="text-gray-400 text-center">
+                      <div className="w-16 h-16 bg-gray-200 rounded-lg mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-2xl font-bold">S2</span>
+                      </div>
+                      <p className="text-sm">Silver Sponsor</p>
+                    </div>
+                  </div>
+                  {/* Back Face */}
+                  <div className="absolute inset-0 h-full w-full rounded-xl bg-gradient-to-br from-teal-500 to-blue-600 [transform:rotateY(180deg)] [backface-visibility:hidden] flex items-center justify-center p-4 shadow-md">
+                    <div className="text-center text-white">
+                      <h4 className="text-lg font-bold mb-2">Silver Partner</h4>
+                      <p className="text-xs leading-relaxed">
+                        Technology leader driving performance 
+                        marketing innovation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Placeholder Silver Sponsor 3 */}
+              <div className="group relative w-full h-36 [perspective:1000px]">
+                <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                  {/* Front Face */}
+                  <div className="absolute inset-0 h-full w-full rounded-xl bg-white [backface-visibility:hidden] flex items-center justify-center p-4 shadow-md border border-gray-300">
+                    <div className="text-gray-400 text-center">
+                      <div className="w-16 h-16 bg-gray-200 rounded-lg mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-2xl font-bold">S3</span>
+                      </div>
+                      <p className="text-sm">Silver Sponsor</p>
+                    </div>
+                  </div>
+                  {/* Back Face */}
+                  <div className="absolute inset-0 h-full w-full rounded-xl bg-gradient-to-br from-green-500 to-teal-600 [transform:rotateY(180deg)] [backface-visibility:hidden] flex items-center justify-center p-4 shadow-md">
+                    <div className="text-center text-white">
+                      <h4 className="text-lg font-bold mb-2">Silver Partner</h4>
+                      <p className="text-xs leading-relaxed">
+                        Strategic partner empowering marketing 
+                        teams with cutting-edge tools.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bronze Sponsors */}
+          <div>
+            <h3 className="text-2xl font-semibold text-center mb-8 text-orange-400">Bronze Sponsors</h3>
+            <div className="grid md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+              {/* Placeholder Bronze Sponsors */}
+              {[1, 2, 3, 4].map((num) => (
+                <div key={num} className="group relative w-full h-32 [perspective:1000px]">
+                  <div className="relative h-full w-full rounded-lg shadow-lg transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                    {/* Front Face */}
+                    <div className="absolute inset-0 h-full w-full rounded-lg bg-white [backface-visibility:hidden] flex items-center justify-center p-3 shadow-sm border border-orange-200">
+                      <div className="text-gray-400 text-center">
+                        <div className="w-12 h-12 bg-orange-100 rounded-lg mx-auto mb-1 flex items-center justify-center">
+                          <span className="text-lg font-bold text-orange-500">B{num}</span>
+                        </div>
+                        <p className="text-xs">Bronze</p>
+                      </div>
+                    </div>
+                    {/* Back Face */}
+                    <div className="absolute inset-0 h-full w-full rounded-lg bg-gradient-to-br from-orange-500 to-red-600 [transform:rotateY(180deg)] [backface-visibility:hidden] flex items-center justify-center p-3 shadow-sm">
+                      <div className="text-center text-white">
+                        <h4 className="text-sm font-bold mb-1">Bronze Partner</h4>
+                        <p className="text-xs leading-tight">
+                          Supporting SEM innovation and community growth.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center mt-16">
+            <p className="text-gray-400 mb-6">Interested in becoming a sponsor?</p>
+            <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-3 rounded-full text-white font-semibold transition-all duration-300 transform hover:scale-105">
+              Partner With Us
+            </button>
           </div>
         </div>
       </section>
@@ -591,6 +953,127 @@ const toggleFaq = (index: number) => {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Memories From Previous Events Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mx-auto mb-6">
+              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h2 className="text-4xl font-bold mb-4">Memories From Previous Events</h2>
+            <p className="text-gray-400">
+              For more photos and videos visit our social hubs.
+            </p>
+          </div>
+          
+          {/* Photo Gallery Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 h-96">
+            {/* Large featured image */}
+            <div className="col-span-2 row-span-2 group relative overflow-hidden rounded-lg bg-gray-800">
+              <Image
+                src="/images/events/event-main.jpg"
+                alt="Main event moment"
+                width={400}
+                height={400}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-sm font-semibold">Main Event</p>
+              </div>
+            </div>
+
+            {/* Tall image */}
+            <div className="col-span-1 row-span-2 group relative overflow-hidden rounded-lg bg-gray-800">
+              <Image
+                src="/images/events/speaker-action.jpg"
+                alt="Speaker presenting"
+                width={200}
+                height={400}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-2 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-xs font-semibold">Speaker in Action</p>
+              </div>
+            </div>
+
+            {/* Medium image */}
+            <div className="col-span-1 row-span-1 group relative overflow-hidden rounded-lg bg-gray-800">
+              <Image
+                src="/images/events/one-on-one.jpeg"
+                alt="One-on-one sessions"
+                width={200}
+                height={200}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+              <div className="absolute bottom-2 left-2 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-xs font-semibold">1-on-1 Sessions</p>
+              </div>
+            </div>
+
+            {/* Wide image */}
+            <div className="col-span-2 row-span-1 group relative overflow-hidden rounded-lg bg-gray-800">
+              <Image
+                src="/images/events/audience-wide.jpeg"
+                alt="Engaged audience"
+                width={400}
+                height={200}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+              <div className="absolute bottom-2 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-sm font-semibold">Engaged Audience</p>
+              </div>
+            </div>
+
+            {/* Small image */}
+            <div className="col-span-1 row-span-1 group relative overflow-hidden rounded-lg bg-gray-800">
+              <Image
+                src="/images/events/coffee-break.jpeg"
+                alt="Coffee networking"
+                width={200}
+                height={200}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+              <div className="absolute bottom-2 left-2 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-xs font-semibold">Coffee Networking</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Social Media Links */}
+          <div className="text-center mt-12">
+            <p className="text-gray-400 mb-6">Follow us for more updates and behind-the-scenes content</p>
+            <div className="flex justify-center space-x-6">
+              <a href="#" className="group flex items-center space-x-2 text-gray-400 hover:text-blue-400 transition-colors">
+                <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center group-hover:bg-blue-400 transition-colors">
+                  <span className="text-white font-semibold">T</span>
+                </div>
+                <span>@SEMStories</span>
+              </a>
+              <a href="#" className="group flex items-center space-x-2 text-gray-400 hover:text-pink-400 transition-colors">
+                <div className="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center group-hover:bg-pink-400 transition-colors">
+                  <span className="text-white font-semibold">I</span>
+                </div>
+                <span>@semstoriesmore</span>
+              </a>
+              <a href="#" className="group flex items-center space-x-2 text-gray-400 hover:text-blue-600 transition-colors">
+                <div className="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                  <span className="text-white font-semibold">L</span>
+                </div>
+                <span>SEM Stories & More</span>
+              </a>
             </div>
           </div>
         </div>
